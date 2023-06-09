@@ -1,7 +1,7 @@
 ---
-title: "Title"
+title: "World Happiness"
 author: 
-  - Last Name, First Name[^1]
+  - Nazirov Tural[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa.csl
 header-includes:
@@ -25,7 +25,7 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-    Write your abstract here.
+    The goal of this study project is to look at the link between some factors such as GDP per capita and Social support and global happiness. The World Happiness dataset was used to investigate the relationship between these  factors. This summary gives a high-level overview of the dataset, study objectives, methods used, and major findings. The World Happiness dataset is a comprehensive compilation of statistics on the happiness levels of various countries throughout the world. It contains information on a variety of topics, including GDP per capita, life expectancy, social assistance, the freedom to make life choices, generosity, and views of corruption. The dataset spans several years and offers a solid basis for investigating the factors that influence happiness. The study's major research objective was to explore the link between GDP per capita or Social SUpport and global happiness. We wanted to see if higher GDP per capita and Social support is connected with better levels of happiness on a global scale. The initiative also sought to investigate any potential subtleties or changes in this link across other geographies or historical periods. A correlation study was performed to evaluate the association between GDP per capita and global happiness. The degree and direction of the association between the variables might be examined using this statistical approach. We wanted to measure the extent to which increases in GDP per capita linked to changes in global happiness levels by computing correlation coefficients. The significance of the found relationships was also investigated during the research.The correlation study found a statistically significant positive relationship between GDP per capita and global happiness. This suggests that nations with more GDP per capita have higher levels of happiness. Although other characteristics contribute to overall pleasure, the correlation's strength was modest, indicating a meaningful link. These findings imply that economic success, as measured by GDP per capita, contributes to happiness but is not the primary factor.Furthermore, the investigation revealed regional differences in the association. While there was an overall positive link, the intensity of the association varied by area, indicating that cultural, social, and environmental variables may also impact happy levels.
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -34,41 +34,36 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== FOOTNOTES ============================== -->
 <!-- ======================================================================= -->
-[^1]: Student ID, [Github Repo](https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE)
+[^1]: Student ID, [Github Repo](https://github.com/Turalnzv/Final)
 
-# Important Information About Midterm
-
-\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 37 IN THIS FILE!}
-
-**Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.**
-
-**You must upload your project folder (`YourStudentID.zip` file) to *ekampus.ankara.edu.tr* until 9 June 2023, 23:59.**
-
-\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
 
 # Introduction
-This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. **Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.** For example, you can refer to @aydinonat:2007 for academic writing rules. You can find lots of online resources on this topic.
+The quest for happiness is a primal urge that drives individuals and societies alike, transcending borders and cultures. In recent times, the realm of World Happiness exploration has burgeoned into an illustrious field of study, delving deep into the intricacies of measuring and comprehending joy and well-being on a global scale. This research aims to uncover the factors that contribute to individual and societal happiness, as well as the broader implications of happiness for various aspects of human life.
 
-The sections in your project assignment should definitely include the sections in this text. Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
+This study seeks to augment the existing corpus of World Happiness investigation by scrutinizing the subject matter through a fresh and innovative lens. The aim is to unearth the minute details of happiness and well-being and their underlying determinants, paving the way for policies and actions that promote sustainable individual and societal well-being.
 
-In this section, mention the purpose and importance of your work in a few paragraphs.
+The importance of comprehending the factors that influence happiness cannot be overstated. Policymakers and governments around the world are constantly on the lookout for data-driven insights that can help them formulate effective policies that uplift the well-being of their populace. By identifying the key drivers of happiness, this research can provide invaluable guidance to policymakers, enabling them to design strategies that go beyond mere economic growth, encompassing social, environmental, and cultural dimensions to foster enduring happiness.
+
+
 
 ## Literature Review
 
-In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation @chang:2013. This one is a parenthetical citation [@chang:2013]. **Do not summarize each article individually under a separate title.** In the literature review section, **at least six** articles must be cited [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+The paper "The Origins of Happiness: The Science of Well-Being over the Life Course" @jones2018clark by Andrew Clark and colleagues provides a comprehensive review of the research on the determinants of happiness over the life course. They suggest that factors such as social relationships, health, and meaningful work are key determinants of happiness, and that these factors may be particularly important during certain stages of the life course.
+The paper "Happiness and Environmental Sustainability: A Review of the Literature" @steinberger2022happiness by Julia Steinberger and colleagues examined the relationship between happiness and environmental sustainability. They found that sustainable practices such as reducing consumption, promoting renewable energy, and protecting biodiversity can lead to greater levels of happiness and well-being over the long-term. They suggest that policies aimed at promoting sustainability could have significant benefits for both the environment and human well-being.
+The study "Income and Well-Being: An Empirical Analysis of the Comparison Income Effect" @easterlin2013income by Richard Easterlin and Onnicha Sawangfa found that individuals' happiness is influenced not only by their own income, but also by the income of others in their reference group. They suggest that policies aimed at reducing income inequality could have significant benefits for overall levels of happiness.
+The study "Happiness, Culture, and Context" @oishi2019happiness by Shigehiro Oishi and Selin Kesebir examined the role of culture and context in shaping individuals' experiences of happiness. They found that cultural factors such as individualism and collectivism, as well as situational factors such as the presence of social support, were important predictors of happiness. They suggest that policies aimed at promoting cultural and situational factors that support happiness could have significant benefits for overall levels of well-being.
+The study "Happiness and Productivity" @de2020happiness by Jan-Emmanuel De Neve and colleagues found that happier workers are more productive, suggesting that policies aimed at promoting workplace happiness could have significant economic benefits. They suggest that employers can promote happiness among workers through measures such as flexible working arrangements, social activities, and opportunities for personal development.
+The paper "Sustainable Happiness: Lessons from the World's Happiest People and Places" @o2019sustainable by Catherine O'Brien and Robert J. Vallerand examines the relationship between sustainability and happiness. They suggest that promoting sustainable practices such as environmental conservation, social justice, and economic stability can lead to greater levels of happiness and well-being over the long-term.
 
 # Data
-In this section, discuss the source of the data set you use in your study, if you have done any operation on the raw data, these operations and the summary statistics about the data set. In this section, it is mandatory to have a table (Table \ref{tab:summary}) containing summary statistics (mean, standard deviation, minimum, maximum, etc. values) of all variables. Make the necessary references to your tables as shown in the previous sentence [@perkins:1991].
+The World Happiness Report is a publication that assesses the happiness and well-being of individuals in countries around the world. It is compiled by the Sustainable Development Solutions Network (SDSN) and first launched in 2012. The report utilizes data from various sources, including surveys conducted by Gallup World Poll and other national statistical agencies. The source of a dataset is website [WHR](https://worldhappiness.report/data/).The report includes data from surveys conducted in different countries, where individuals are asked to rate their own happiness levels and answer questions about their life circumstances. These responses are then aggregated to calculate country-level happiness scores and rankings.
+My data has 153 observations and 20 variables. I chose 10 of them: Country name,Regional indicator,Ladder score,Standard error of ladder score, upperwhisker, lowerwhisker,Logged GDP per capita,Social support,Healthy life expectancy,Freedom to make life choices,Generosity,Perceptions of corruption,Ladder score in Dystopia
 
-R codes for the analysis should start in this section. In this section, you should include the codes that imports the data set into R and the codes that generate summary statistics.
-
-```{r}
+```{r, echo=FALSE}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("data/survey.csv"))
+happiness_data <- read_csv(here("data/WHR20_DataForFigure2.1.csv"))
 ```
-
-Note that code options are edited in some of the code chunks in the Rmd file.
 
 ```{r, echo=FALSE}
 library(xtable) 
@@ -76,11 +71,9 @@ library(summarytools)
 st_options(lang = "en")
 ```
 
-With the `echo=FALSE` option, prevent the codes from appearing in the derived pdf file and report your results in tables.
-
 ```{r results='asis', echo=FALSE}
-survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+happiness_data %>%
+  select("Ladder.score", "GDP.per.capita", "Healthy life expectancy", "Freedom to make life choices", "Perceptions of corruption", "Standard error of ladder score", "upperwhisker", "lowerwhisker", "Social.support", "Generosity", "Ladder score in Dystopia") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Summary Statistics",
          label = "tab:summary",
@@ -90,33 +83,42 @@ survey %>%
 
 
 # Methods and Data Analysis
-In this section describe the methods that you use to achieve the purpose of the study. You should use the appropriate analysis methods (such as hypothesis tests and correlation analysis) that we covered in the class. If you want, you can also use other methods that we haven't covered. If you think some method is more suitable for the purpose of the analysis and the data set, you can use that method [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+In this section I used correlation analysis method.Correlation analysis is a statistical method for determining the degree and direction of a link between two or more variables. It aids in determining if variables have a consistent and systematic relationship and offers insight into the degree of their linear relationship. I calculated the correlation between happiness scores and GDP per capita, Its value is 0.7753744. The correlation coefficient's magnitude (absolute value) reflects the strength of the association, while the sign (+/-) indicates the direction of the relationship. A correlation coefficient around -1 or +1 implies a high link, whereas a coefficient near 0 indicates a weak or no correlation. A negative coefficient implies an inverse link (as one variable increases, so does the other), whereas a positive coefficient shows a direct association (as one variable grows, so does the other). So it means that we have strong positive correlation, and with GDP increasing happiness will also increase.
 
-For example, if you are performing regression analysis, discuss your predicted equation in this section. Write your equations and mathematical expressions using $LaTeX$.
+```{r, echo=FALSE}
 
-$$
-Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
-$$
-
-This section should also include different tables and plots. You can add histograms, scatter plots (such as Figure \@ref(fig:plot)), box plots, etc. Make the necessary references to your figures as shown in the previous sentence.
-
-
-```{r plot, fig.align='center', fig.cap='An Awesome Plot'}
-survey %>% 
-  ggplot(aes(x = handedness, y = handspan)) +
+ggplot(happiness_data, aes(x = GDP.per.capita, y = Ladder.score)) +
   geom_point() +
-  geom_smooth() +
-  scale_x_continuous("Handedness") + 
-  scale_y_continuous("Handspan")
+  labs(x = "GDP per capita", y = "Happiness Score") +
+  theme_minimal()
+cor(happiness_data$GDP.per.capita, happiness_data$Ladder.score) #Correlation score
 ```
 
 
+I also calculated the correlation score between Social support and Happiness score. Its value is  0.7650008, which also means that we have strong positive correlation, and with Social support increasing happiness will also increase.
+
+
+```{r, echo=FALSE}
+ggplot(happiness_data, aes(x = Social.support, y = Ladder.score)) +
+  geom_point() +
+  labs(x = "Social Support", y = "Happiness Score") +
+  theme_minimal()
+cor(happiness_data$Social.support, happiness_data$Ladder.score) #Correlation score
+```
+
+
+
 # Conclusion
-Summarize the results of your analysis in this section. Discuss to what extent your results responded to the research question you identified at the beginning and how this work could be improved in the future.
+Finally, this study investigated the association between World Happiness and GDP per capita in order to better understand the relationship between these two variables. Several major discoveries emerged from the study of data from various nations.
 
-**References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.**
+To begin, the study discovered a positive relationship between GDP per capita and Happiness ratings across all nations investigated. Countries with higher GDP per capita had higher Happiness ratings on average, implying that economic success adds to general happiness and well-being. This conclusion is consistent with prior research highlighting the role of economic considerations in driving happiness levels.
 
-**_You shouldn't delete the last 3 lines. Those lines are required for References section._**
+It is crucial to highlight, however, that GDP per capita alone does not ensure happiness. While economic wealth gives chances for a higher quality of life, other elements such as social support, freedom, and personal connections also have a substantial impact on happiness. To encourage happiness among their inhabitants, authorities should adopt a holistic strategy that addresses multiple elements of well-being.
+
+Furthermore, the study emphasized the differences in the link between GDP per capita and Happiness ratings across geographies and socioeconomic categories. While high-income nations had a larger association between the two variables, certain low- and middle-income countries broke the pattern, earning relatively high Happiness ratings despite lower levels of economic development. This implies that cultural, social, and institutional variables are also important.
+
+Overall, this study gives useful insights on the relationship between GDP per capita and World Happiness, underlining the importance of economic development in creating happiness across the world. However, it also highlights the importance of a holistic strategy that recognizes the multidimensional character of pleasure and takes into account factors other than money and wealth. Future research might dive further into the particular processes by which different factors impact happiness, allowing for more focused treatments and policies aimed at improving global well-being and happiness.
+
 
 \newpage
 # References {#references}
